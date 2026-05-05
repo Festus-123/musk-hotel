@@ -2,11 +2,11 @@ import { FiArrowRight } from "react-icons/fi";
 
 const HeroBadge = () => {
   return (
-    <div className="w-full flex flex-col-reverse gap-20 md:flex-row items-center justify-evenly">
-      <div className="flex items-center ">
+    <div className="w-full max-w--125 flex flex-col-reverse text-xs sm:text-base gap-10 md:flex-row items-center justify-evenly">
+      <div className="flex items-center">
         {/* Existence */}
         <div className=" bg-white text-center text-black p-2 md:p-3">
-          <p>
+          <p className="">
             <b>Since 1970</b>{" "}
             <span className="font-extralight">54 years of operation</span>
           </p>

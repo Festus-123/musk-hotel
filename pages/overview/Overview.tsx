@@ -3,152 +3,156 @@ import faventRoom from "@/assets/favent-room.png";
 import lightThemed from "@/assets/light-themed.png";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
-import { FaBath, FaPeopleArrows, FaDollarSign } from "react-icons/fa";
 
-import { TiLocation } from "react-icons/ti";
+// lighter (regular) icons
+import { LuBath, LuUsers, LuDollarSign, LuMapPin } from "react-icons/lu";
 
 const Overview = () => {
   const aboutCards = [
     {
-      icon: TiLocation,
+      icon: LuMapPin,
       title: "Located in the heart of the city",
       description:
-        "Ideally loacated in the heart of the city for easy access and convinence",
+        "Ideally located in the heart of the city for easy access and convenience",
     },
     {
-      icon: FaBath,
-      title: "Luxurious modern and confortable",
+      icon: LuBath,
+      title: "Luxurious modern and comfortable",
       description:
-        "Experience a luxurious modern and fully equiped space for comfort",
+        "Experience a luxurious, modern and fully equipped space for comfort",
     },
     {
-      icon: FaPeopleArrows,
-      title: "Friendly and Welcoming staff",
+      icon: LuUsers,
+      title: "Friendly and welcoming staff",
       description:
-        "Our friendly and welcoming staf ensure aelightful stay every time",
+        "Our friendly and welcoming staff ensure a delightful stay every time",
     },
     {
-      icon: FaDollarSign,
+      icon: LuDollarSign,
       title: "Best price and great offers",
       description:
         "Enjoy unbeatable prices with fantastic offers tailored just for you",
     },
   ];
 
-  const reviews: {
-    img: string;
-    title: string;
-    tag: string;
-    description: string;
-  }[] = [
+  const reviews = [
     {
       img: "/hotel.png",
       title: "4.9/5 ⭐",
-      tag: "Excelent",
+      tag: "Excellent",
       description: "3.5k Reviews on Booking",
     },
     {
       img: "/hotel.png",
       title: "4.9/5 ⭐",
-      tag: "Excelent",
+      tag: "Excellent",
       description: "3.5k Reviews on Booking",
     },
     {
       img: "/hotel.png",
       title: "4.9/5 ⭐",
-      tag: "Excelent",
+      tag: "Excellent",
       description: "3.5k Reviews on Booking",
     },
   ];
+
   return (
-    <section data-theme="light" className="w-full h-full">
-      {/* About card section */}
-      <div className="grid grid-cols-2 md:grid-cols-4 items-start border-b border-gray-300 p-4 md:p-16 gap-2">
-        {aboutCards.map((item, index) => (
-          <About_Card
-            key={index}
-            Icon={item.icon}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
-      </div>
+    <section data-theme="light" className="w-full flex justify-center px-4 overflow-x-hidden">
+      <div className="w-full max-w-350">
 
-      {/* descriptive */}
-      <div className="p-4 md:p-0 flex flex-col items-center gap-5">
-        <div className="p-2 md:p-16 flex flex-col md:flex-row items-center gap-5 md:gap-10 border md:border-none border-[#d4b320df]">
-          {/* images */}
-          <div className="flex gap-10 p-4 items-center w-full md:w-fit">
-            <Image
-              loading="lazy"
-              src={faventRoom}
-              alt="hotel room"
-              width={300}
-              height={800}
-              className="w-full md:w-fit h-110 object-cover object-center"
+        {/* About card section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-b border-gray-300 py-6 md:py-10 gap-4">
+          {aboutCards.map((item, index) => (
+            <About_Card
+              key={index}
+              Icon={item.icon}
+              title={item.title}
+              description={item.description}
             />
-            <Image
-              loading="lazy"
-              src={lightThemed}
-              alt="hotel room"
-              width={400}
-              height={800}
-              className="hidden md:block h-130 objet-cover object-center"
-            />
-          </div>
-
-          <div className="flex flex-col gap-3 p-8">
-            <p className="font-extralight uppercase tracking-wider">
-              welcome to musk
-            </p>
-
-            <h1 className="text-xl md:text-2xl font-bold">
-              Luxury hotel in the heart o the city
-            </h1>
-
-            <p className="w-full md:w-sm font-light">
-              Musk luxury hotel, in the heart of thr city, offers over 500
-              modern, luxuriouu rooms, Enjoy premium facilities, perfect for
-              relations and indulgence, Our friendly staff ensures a seamless,
-              personalised experience, with stunning city views, Discover true
-              luxury and hospitality at musk.
-            </p>
-
-            <button className="bg-[#df8e1ded] p-2 w-max text-white flex items-center gap-2 uppercase text-lg hover:scale-110 cursor-pointer">
-              <span>Read more</span>
-              <span>
-                <FiArrowRight />
-              </span>
-            </button>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-5 md:gap-20 items-center p-4 md:p-8">
-          {reviews.map((item, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <Image
-                loading="lazy"
-                src={item.img}
-                alt="reviews image"
-                width={30}
-                height={30}
-                className="w-10 h-10"
-              />
-              <div className="flex flex-col leading-tight text-sm tracking-wide">
-                <h1 className="flex items-center">
-                  <span className="font-bold text-lg md:text-xl">
-                    {item.title}
-                  </span>
-                  <span className="text-sm font-extralight">{item.tag}</span>
-                </h1>
-                <p className="font-light">{item.description}</p>
-              </div>
-            </div>
           ))}
         </div>
-      </div>
 
-      {/* Section for Rooms and suit */}
+        {/* descriptive */}
+        <div className="flex flex-col items-center gap-10 py-10">
+
+          <div className="flex flex-col lg:flex-row items-center gap-8 p-4 md:p-8">
+
+            {/* images */}
+            <div className="relative flex gap-3 items-center justify-center w-full lg:w-auto">
+
+              <Image
+                loading="lazy"
+                src={faventRoom}
+                alt="hotel room"
+                width={260}
+                height={500}
+                className="w-full lg:w-70 h-100 lg:h-100 object-cover"
+              />
+
+              <Image
+                loading="lazy"
+                src={lightThemed}
+                alt="hotel room"
+                width={300}
+                height={500}
+                className="w-full lg:w-75 h-100 lg:h-120 object-cover hidden md:block"
+              />
+            </div>
+
+            {/* text */}
+            <div className="flex flex-col gap-4 px-2 md:px-4 w-full lg:w-sm xl:w-md max-w-lg">
+              <p className="font-extralight uppercase tracking-wider text-sm md:text-base">
+                welcome to musk
+              </p>
+
+              <h1 className="text-2xl md:text-5xl font-bold">
+                Luxury hotel in the heart of the city
+              </h1>
+
+              <p className="font-light text-sm md:text-base text-gray-600">
+                Musk luxury hotel, in the heart of the city, offers over 500
+                modern, luxurious rooms. Enjoy premium facilities, perfect for
+                relaxation and indulgence. Our friendly staff ensures a seamless,
+                personalised experience with stunning city views. Discover true
+                luxury and hospitality at Musk.
+              </p>
+
+              <button className="bg-[#df8e1ded] px-4 py-2 w-max text-white flex items-center gap-2 uppercase text-sm md:text-base hover:scale-105 transition">
+                <span>Read more</span>
+                <FiArrowRight />
+              </button>
+            </div>
+          </div>
+
+          {/* reviews */}
+          <div className="flex flex-col sm:flex-row gap-6 md:gap-12 items-center justify-center">
+            {reviews.map((item, index) => (
+              <div key={index} className="flex items-center gap-3">
+                <Image
+                  loading="lazy"
+                  src={item.img}
+                  alt="reviews image"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 object-cover"
+                />
+                <div className="flex flex-col leading-tight text-sm tracking-wide">
+                  <h1 className="flex items-center gap-1">
+                    <span className="font-bold text-lg md:text-xl">
+                      {item.title}
+                    </span>
+                    <span className="text-xs font-light">{item.tag}</span>
+                  </h1>
+                  <p className="font-light text-gray-600 text-sm">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </div>
     </section>
   );
 };

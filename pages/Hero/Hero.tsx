@@ -6,8 +6,9 @@ import HeroBadge from "@/componens/hero-badge/HeroBadge";
 const Hero = () => {
     return (
         <section
+            id="home"
             data-theme="dark"
-            className="relative w-full h-screen text-white flex items-center md:justify-center p-4 md:p-2">
+            className="relative w-full h-screen text-white flex items-center md:justify-center p-4 md:p-2 overflow-x-hidden">
 
                 <div className="bg-black/40 absolute inset-0 w-full h-full z-10"/>
 
@@ -23,7 +24,7 @@ const Hero = () => {
 
                     <span>⭐⭐⭐⭐⭐</span>
 
-                <h1 className="uppercase text-[2em] sm:text-[3em] md:text-[7em]">
+                <h1 className="uppercase text-[2em] sm:text-[3em] md:text-[5em] lg:text-[6em] md:text-center">
                     Musk Luxury Hotel
                 </h1>
 
