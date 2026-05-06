@@ -20,7 +20,7 @@ const Hero = () => {
                     height={700}
                     className="absolute inset-0 w-full h-full object-center object-cover"/>
 
-                <div className="relative flex flex-col gap-4 md:items-center z-20">
+                <div className="relative flex flex-col gap-4 md:items-center z-20 mt-10 md:mt-20">
 
                     <span>⭐⭐⭐⭐⭐</span>
 

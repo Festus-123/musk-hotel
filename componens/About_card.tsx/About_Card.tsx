@@ -13,12 +13,12 @@ const About_Card = ({
     <div className="flex flex-col items-center text-center gap-4 p-5 sm:p-6 md:p-8 ">
 
       {/* Icon */}
-      <div className="text-[#e7c27af6] text-4xl sm:text-5xl md:text-6xl">
+      <div className="text-[#e7c27af6] text-3xl sm:text-4xl md:text-5xl">
         <Icon />
       </div>
 
       {/* Title */}
-      <h1 className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl leading-snug">
+      <h1 className="font-medium text-base sm:text-lg md:text-xl lg:text-2xl leading-snug">
         {title}
       </h1>
 

@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BiHotel } from "react-icons/bi"
-import { FaHamburger } from "react-icons/fa";
 import { LuMenu } from "react-icons/lu";
 import { FiX } from "react-icons/fi";
 
@@ -31,7 +29,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="fixed top-0 w-full z-50 flex flex-row items-center justify-between p-4 text-white">
+        <div className="bg-white/80 fixed top-0 w-full z-50 flex flex-row items-center justify-between p-4 text-black">
             {/* Logo section */}
             <div className="flex items-center gap-2">
                 <Image 
@@ -74,7 +72,7 @@ const Navbar = () => {
 
             {/* Call to action button */}
             <div className="hidden lg:block">
-                <button className="flex items-center gap-2 uppercase bg-[#bf7331] p-2 text-white">
+                <button className="flex items-center gap-2 uppercase bg-[#e7c357] p-2 text-white">
                     <span className="text-3xl"><BiHotel /></span>
                     <span>Reservation</span>
                 </button>

@@ -40,7 +40,7 @@ const Rooms = () => {
               slidesPerView={1}
               navigation
               pagination={{ clickable: true }}
-              autoplay={{ delay: 5000 }}
+              autoplay={{ delay: 3000 }}
               loop={true}
             >
               {suite.map((room, index) => (

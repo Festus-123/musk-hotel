@@ -3,6 +3,7 @@ import Overview from "@/pages/overview/Overview";
 import Rooms from "@/pages/rooms-and-suite/Rooms";
 import Explore from "@/pages/explore-musk/Explore";
 import News from "@/pages/news-and-offers/News";
+import Contact from "@/pages/contact/Contact";
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <Rooms />
       <Explore />
       <News />
+      <Contact />
     </div>
   );
 }

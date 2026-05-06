@@ -100,7 +100,7 @@ const Overview = () => {
             </div>
 
             {/* text */}
-            <div className="flex flex-col gap-4 px-2 md:px-4 w-full lg:w-sm xl:w-md max-w-lg">
+            <div className="flex flex-col gap-4 px-2 md:px-4 w-full lg:w-sm xl:w-lg max-w-xl">
               <p className="font-extralight uppercase tracking-wider text-sm md:text-base">
                 welcome to musk
               </p>

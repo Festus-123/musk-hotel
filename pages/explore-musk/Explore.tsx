@@ -9,6 +9,7 @@ import room4 from "@/assets/room-4.png";
 
 import { LuWifi, LuCar, LuUtensils, LuDumbbell, LuWaves } from "react-icons/lu";
 import { MdSpa } from "react-icons/md";
+import { FaPlay } from "react-icons/fa";
 import ExploreBadge from "../explore-badge/ExploreBadge";
 
 export type FACILITIES = {
@@ -93,8 +94,8 @@ const Explore = () => {
           </h1>
         </div>
 
-        {/* Facilities */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 px-2 sm:px-4 md:px-8">
+        {/* Facilities and ammenities*/}
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 p-4 md:px-8">
           {facilities.map((item, index) => (
             <div key={index} className="flex items-start gap-4">
               {/* Icon (lighter style) */}
@@ -117,7 +118,7 @@ const Explore = () => {
       </div>
 
       {/* Explore video placeholder */}
-      <section id="explore-musk" className="w-full h-full hidde max-w-450  ">
+      <section id="explore-musk" className=" w-full h-full hidde max-w-450">
         <div className="w-full relative">
           <Image
             loading="lazy"
@@ -125,15 +126,21 @@ const Explore = () => {
             alt="explore hotel image"
             width={700}
             height={500}
-            className="w-full h-140 object-center object-cover relative"
+            className="w-full h-140 object-center object-cover "
           />
-          <h1 className="absolute w-full h-full inset-0 text-center  text-xl md:text-6xl italic text-gray-700">
+        <div className="flex flex-col items-center gap-2 absolute top-[50%] bottom-[50%] right-[50%] left-[50%]">
+          <div className="rounded-full p-3 md:p-6 bg-[#d79845] ">
+            <FaPlay className="text-xl md:text-3xl text-white text-center"/>
+          </div>
+          <h1 className="italic text-[2em] md:text-[4em]">
             Explore
           </h1>
         </div>
+        </div>
+
 
         {/* Explore hotel babdges */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  p-8 md:p-16 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4  p-8 md:p-16 ">
           {exploreBadge.map((item, index) => (
             <ExploreBadge
               key={index}

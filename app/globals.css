@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
-html body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
+}
+html {
   scroll-behavior: smooth;
+  transition: all 5s ease;
 }
 
 
