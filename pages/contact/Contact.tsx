@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="bg-white/40 absolute w-full h-full backdrop-grayscale backdrop-blur-sm"/>
 
         {/* Form section */}
-        <form action="" className="relative w-full md:w-max grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 p-2 text-white font-extralight">
+        <form action="" className="relative w-full md:w-max grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 md:gap-2 text-white font-extralight">
           <div className="p-2 flex flex-col gap-1 ">
             <label htmlFor="" className="">
               Name

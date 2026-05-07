@@ -83,7 +83,7 @@ const News = () => {
               slidesPerView: 3,
             },
           }}
-          className="py-10"
+          className="py-10 overflow-x-hidden"
         >
           {Offers.map((offer, index) => (
             <SwiperSlide
