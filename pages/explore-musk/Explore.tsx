@@ -105,7 +105,7 @@ const Explore = () => {
 
               {/* Text */}
               <div className="flex flex-col gap-2">
-                <h1 className="text-lg sm:text-xl md:text-2xl font-semibold">
+                <h1 className="text-lg sm:text-xl md:text-2xl">
                   {item.title}
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg font-light text-gray-600">
