@@ -31,13 +31,7 @@ const Navbar = () => {
     return (
         <div className="bg-white/80 fixed top-0 w-full z-50 flex flex-row items-center justify-between p-4 text-black">
             {/* Logo section */}
-            <div className="flex items-center gap-2">
-                <Image 
-                    src="/placeholder.png"
-                    alt="Logo"
-                    width={200}
-                    height={200}
-                    className="w-5 h-5"/>
+            <div className="">
                 <h1 className="italic text-2xl">
                     Musk Hotel
                 </h1>

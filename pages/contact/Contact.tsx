@@ -8,7 +8,7 @@ const Contact = () => {
       className="w-full msx-w-400 h-full p-8 md:p-16 "
     >
       <div className="mb-6 text-center">
-        <p className="uppercase text-[#dfbf60] tracking-wide text-lg">
+        <p className="uppercase text-[#dfbf60] tracking-wide md:text-lg">
             Contact us Now
         </p>
         <h1 className="italic font-medium text-[2em] md:text-[4em]">
@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="bg-white/40 absolute w-full h-full backdrop-grayscale backdrop-blur-sm"/>
 
         {/* Form section */}
-        <form action="" className="relative w-full md:w-max grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 md:gap-2 text-white font-extralight">
+        <form action="" className="relative w-full md:w-max grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 text-white font-extralight">
           <div className="p-2 flex flex-col gap-1 ">
             <label htmlFor="" className="">
               Name

@@ -44,15 +44,15 @@ const Overview = () => {
     },
     {
       img: "/hotel.png",
-      title: "4.9/5 ⭐",
+      title: "5/5 ⭐",
       tag: "Excellent",
-      description: "3.5k Reviews on Booking",
+      description: "4.1k reviews on Agoda",
     },
     {
       img: "/hotel.png",
-      title: "4.9/5 ⭐",
-      tag: "Excellent",
-      description: "3.5k Reviews on Booking",
+      title: "4.8/5 ⭐",
+      tag: "Good",
+      description: "2.4k Reviews on Tripadivisor",
     },
   ];
 

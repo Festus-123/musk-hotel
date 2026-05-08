@@ -16,7 +16,7 @@ const Rooms_Card = ({
   return (
     <div>
       {/* Rooms and suite display div */}
-      <div className="bg-white flex flex-col lg:flex-row items-center gap-0 w-full">
+      <div className="bg-white flex flex-col lg:flex-row-reverse items-center gap-0 w-full">
         <Image
           loading="lazy"
           src={img}
@@ -31,10 +31,10 @@ const Rooms_Card = ({
           <div className="flex items-center gap-2">
             <span className="font-extralight">from:</span>
             <sup className="font-bold">$</sup>
-            <span className="font-bold text-2xl md:text-3xl">{price}</span>
+            <span className="font-medium text-2xl md:text-3xl">{price}</span>
             <span className="uppercase font-extralight ">NIGHT</span>
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold">{roomType}</h1>
+          <h1 className="text-2xl md:text-3xl font-medium">{roomType}</h1>
           <p className="text-sm md:text-base font-extralight w-full md:w-lg">
             {description}
           </p>
@@ -42,7 +42,7 @@ const Rooms_Card = ({
             {details.map((item, index) => (
               <div
                 key={index}
-                className="uppercase md:text-lg flex items-center gap-2"
+                className="uppercase text-sm md:text-lg flex items-center gap-2"
               >
                 <span className="font-extralight ">
                   <item.icon />{" "}
